@@ -69,28 +69,33 @@
                 <div class="modal-body">
                 
                     <form method="post" action="process.php">
-                        <label for="name">Name: <span class="required">*</span></label>
-                        <input type="text" id="name" name="name" value="<?php echo ($sr && !$cf['form_ok']) ? $cf['posted_form_data']['name'] : '' ?>" placeholder="John Doe" required autofocus />
-                        
-                        <label for="email">Email Address: <span class="required">*</span></label>
-                        <input type="email" id="email" name="email" value="<?php echo ($sr && !$cf['form_ok']) ? $cf['posted_form_data']['email'] : '' ?>" placeholder="johndoe@example.com" required />
-                        
-<!--                    <label for="telephone">Telephone: </label>
-                        <input type="tel" id="telephone" name="telephone" value="<?php //echo ($sr && !$cf['form_ok']) ? $cf['posted_form_data']['telephone'] : '' ?>" />
-                        
-                        <label for="enquiry">Enquiry: </label>
-                        <select id="enquiry" name="enquiry">
-                            <option value="General" <?php //echo ($sr && !$cf['form_ok'] && $cf['posted_form_data']['enquiry'] == 'General') ? "selected='selected'" : '' ?>>General</option>
-                            <option value="Sales" <?php //echo ($sr && !$cf['form_ok'] && $cf['posted_form_data']['enquiry'] == 'Sales') ? "selected='selected'" : '' ?>>Sales</option>
-                            <option value="Support" <?php //echo ($sr && !$cf['form_ok'] && $cf['posted_form_data']['enquiry'] == 'Support') ? "selected='selected'" : '' ?>>Support</option>
-                        </select>
- -->                        
-                        <label for="message">Message: <span class="required">*</span></label>
-                        <textarea id="message" name="message" placeholder="Your message must be greater than 20 charcters" required data-minlength="20"><?php echo ($sr && !$cf['form_ok']) ? $cf['posted_form_data']['message'] : '' ?></textarea>
-                        
+
+                        <fieldset>
+                            <label for="name">Name: <span class="required">*</span></label>
+                            <input class="input-xlarge" type="text" id="name" name="name" value="<?php echo ($sr && !$cf['form_ok']) ? $cf['posted_form_data']['name'] : '' ?>" placeholder="John Doe" required autofocus />
+                            
+                            <label for="email">Email Address: <span class="required">*</span></label>
+                            <input class="input-xlarge" type="email" id="email" name="email" value="<?php echo ($sr && !$cf['form_ok']) ? $cf['posted_form_data']['email'] : '' ?>" placeholder="johndoe@example.com" required />
+                            
+    <!--                    <label for="telephone">Telephone: </label>
+                            <input type="tel" id="telephone" name="telephone" value="<?php //echo ($sr && !$cf['form_ok']) ? $cf['posted_form_data']['telephone'] : '' ?>" />
+                            
+                            <label for="enquiry">Enquiry: </label>
+                            <select id="enquiry" name="enquiry">
+                                <option value="General" <?php //echo ($sr && !$cf['form_ok'] && $cf['posted_form_data']['enquiry'] == 'General') ? "selected='selected'" : '' ?>>General</option>
+                                <option value="Sales" <?php //echo ($sr && !$cf['form_ok'] && $cf['posted_form_data']['enquiry'] == 'Sales') ? "selected='selected'" : '' ?>>Sales</option>
+                                <option value="Support" <?php //echo ($sr && !$cf['form_ok'] && $cf['posted_form_data']['enquiry'] == 'Support') ? "selected='selected'" : '' ?>>Support</option>
+                            </select>
+     -->                        
+                            <label for="message">Message: <span class="required">*</span></label>
+                            <textarea id="message" name="message" class="input-xlarge" placeholder="Your message must be greater than 20 charcters" required data-minlength="20"><?php echo ($sr && !$cf['form_ok']) ? $cf['posted_form_data']['message'] : '' ?></textarea>
+
+                        </fieldset>
+
                         <span id="loading"></span>
-                        <input type="submit" value="Holla!" id="submit-button" />
+                        <input type="submit" value="Submit" id="submit-button" class="btn btn-primary"/>
                         <p id="req-field-desc"><span class="required">*</span> indicates a required field</p>
+
                     </form>
                     <?php unset($_SESSION['cf_returndata']); ?>
 
