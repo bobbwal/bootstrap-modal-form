@@ -75,8 +75,8 @@
                         <label for="email">Email Address: <span class="required">*</span></label>
                         <input type="email" id="email" name="email" value="<?php echo ($sr && !$cf['form_ok']) ? $cf['posted_form_data']['email'] : '' ?>" placeholder="johndoe@example.com" required />
                         
-<!--                         <label for="telephone">Telephone: </label>
-                        <input type="tel" id="telephone" name="telephone" value="<?php echo ($sr && !$cf['form_ok']) ? $cf['posted_form_data']['telephone'] : '' ?>" />
+<!--                    <label for="telephone">Telephone: </label>
+                        <input type="tel" id="telephone" name="telephone" value="<?php //echo ($sr && !$cf['form_ok']) ? $cf['posted_form_data']['telephone'] : '' ?>" />
                         
                         <label for="enquiry">Enquiry: </label>
                         <select id="enquiry" name="enquiry">
