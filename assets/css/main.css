@@ -1,0 +1,77 @@
+
+/* Overwrite modal slide in */
+.modal.fade{
+    -webkit-transition: opacity .4s linear, none;
+    -moz-transition: opacity .4s linear, none;
+    -ms-transition: opacity .4s linear, none;
+    -o-transition: opacity .4s linear, none;
+    transition: opacity .4s linear, none;
+    top: 50%;
+}
+
+#myModal {
+    background-color:#fff;
+}
+
+/*//////////////////////////////*/
+
+#errors {
+    border:solid 1px #E58E8E;
+    padding:10px;
+    margin:25px 0px;
+    display:block;
+    width:437px;
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    border-radius:8px;
+    background:#FFE6E6 url(../img/cancel_48.png) no-repeat 405px center;
+    display:none;
+}
+
+#errors li {
+    padding:2px;
+    list-style:none;    
+}
+
+#errors li:before {
+    content: ' - '; 
+}
+
+#errors #info {
+    font-weight:bold;
+}
+
+#errors #info:before {
+    content: '';    
+}
+
+#success {
+    border:solid 1px #83D186;
+    padding:25px 10px;
+    margin:25px 0px;
+    display:block;
+    width:437px;
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    border-radius:8px;
+    background:#D3EDD3 url(../img/accepted_48.png) no-repeat 405px center;
+    font-weight:bold;
+    display:none;
+}
+
+#errors.visible, #success.visible {
+    display:block;  
+}
+
+#req-field-desc {
+    font-style:italic;
+}
+
+ #loading {
+    width:32px;
+    height:32px;
+    background-image:url(../../img/loading.gif);
+    display:block;
+    position:absolute;
+    display:none;
+}
