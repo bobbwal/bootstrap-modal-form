@@ -14,18 +14,12 @@
 	
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/main.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css?v=2">
-
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
-
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
     <script src="js/libs/modernizr-1.7.min.js"></script>
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -107,10 +101,12 @@
         </div><!-- /#contact-form -->
     </div><!-- /#container -->
 
-	<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>-->
-	<script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.5.1.min.js"%3E%3C/script%3E'))</script>
-	<script src="js/plugins.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/libs/jquery-1.9.0.min.js"><\/script>')</script>
+    <script src="assets/js/bootstrap.min.js"></script>
+	<!-- // <script src="js/plugins.js"></script> -->
 	<script src="js/script.js"></script>
+
 	<!--[if lt IE 7 ]>
 	<script src="js/libs/dd_belatedpng.js"></script>
 	<script> DD_belatedPNG.fix('img, .png_bg');</script>
