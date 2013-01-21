@@ -242,29 +242,6 @@ input:required, textarea:required {
     box-shadow:none;
 }
 
-/* Normalize placeholder styles */
-
-/* chrome, safari */
-::-webkit-input-placeholder {
-    color:#CCC;
-    font-style:italic;
-}
-
-/* mozilla */
-input:-moz-placeholder, textarea:-moz-placeholder {
-    color:#CCC;
-    font-style:italic;
-}
-
-/* ie (faux placeholder) */
-input.placeholder-text, textarea.placeholder-text  { 
-    color:#CCC;
-    font-style:italic;
-}
-
-
-
-
 .ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
 .hidden { display: none; visibility: hidden; }
 .visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
@@ -275,7 +252,6 @@ input.placeholder-text, textarea.placeholder-text  {
 .clearfix:after { clear: both; }
 .clearfix { zoom: 1; }
 
-
 @media all and (orientation:portrait) {
 
 }
@@ -285,10 +261,8 @@ input.placeholder-text, textarea.placeholder-text  {
 }
 
 @media screen and (max-device-width: 480px) {
-
   /* html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
 }
-
 
 @media print {
   * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important;
@@ -303,10 +277,4 @@ input.placeholder-text, textarea.placeholder-text  {
   @page { margin: 0.5cm; }
   p, h2, h3 { orphans: 3; widows: 3; }
   h2, h3{ page-break-after: avoid; }
-}
-
-
-
-#myModal .modal-body {
-    /*max-height: 800px;*/
 }
