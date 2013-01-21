@@ -40,34 +40,35 @@
                     <h3 id="myModalLabel">Get in touch</h3>
 
                     <p>Fill out our super swanky HTML5 contact form below to get in touch with us! Please provide as much information as possible for us to help you with your enquiry :)</p>
-                    <?php
-        			//init variables
-        			$cf = array();
-        			$sr = false;
-        			
-        			if(isset($_SESSION['cf_returndata'])){
-        				$cf = $_SESSION['cf_returndata'];
-        			 	$sr = true;
-        			}
-                    ?>
-                    <ul id="errors" class="<?php echo ($sr && !$cf['form_ok']) ? 'visible' : ''; ?>">
-                        <li id="info">There were some problems with your form submission:</li>
-                        <?php 
-        				if(isset($cf['errors']) && count($cf['errors']) > 0) :
-        					foreach($cf['errors'] as $error) :
-        				?>
-                        <li><?php echo $error ?></li>
-                        <?php
-        					endforeach;
-        				endif;
-        				?>
-                    </ul>
-                    <p id="success" class="<?php echo ($sr && $cf['form_ok']) ? 'visible' : ''; ?>">Thanks for your message! We will get back to you ASAP!</p>
-            
+                   
                 </div><!-- modal-header -->
 
                 <div class="modal-body">
-                
+                    
+                 <?php
+                    //init variables
+                    $cf = array();
+                    $sr = false;
+                    
+                    if(isset($_SESSION['cf_returndata'])){
+                        $cf = $_SESSION['cf_returndata'];
+                        $sr = true;
+                    }
+                    ?>
+                    <ul id="errors" class="<?php echo ($sr && !$cf['form_ok']) ? 'visible' : ''; ?>">
+                        <!-- <li id="info">There were some problems with your form submission:</li> -->
+                        <?php 
+                        if(isset($cf['errors']) && count($cf['errors']) > 0) :
+                            foreach($cf['errors'] as $error) :
+                        ?>
+                        <li><?php echo $error ?></li>
+                        <?php
+                            endforeach;
+                        endif;
+                        ?>
+                    </ul>
+                    <p id="success" class="<?php echo ($sr && $cf['form_ok']) ? 'visible' : ''; ?>">Thanks for your message! We will get back to you ASAP!</p>
+                    
                     <form method="post" action="process.php">
 
                         <fieldset>

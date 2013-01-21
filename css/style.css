@@ -89,7 +89,7 @@ a:hover { color: #036; }*/
 
 
 
-#contact-form {
+/*#contact-form {
     background-color:#F2F7F9;
     width:465px;
     padding:20px;
@@ -99,7 +99,7 @@ a:hover { color: #036; }*/
     -webkit-border-radius:15px;
     border-radius:15px;
     position:relative;
-}
+}*/
 
 #contact-form h1 {
     /*font-size:42px;*/
@@ -128,12 +128,12 @@ a:hover { color: #036; }*/
     padding:4px;*/
 }
 
-#contact-form input:focus, 
+/*#contact-form input:focus, 
 #contact-form select:focus, 
 #contact-form textarea:focus {
     border: 1px solid #AFCDD8;
     background-color: #EBF2F4;
-}
+}*/
 
 #contact-form textarea {
     /*height:150px;
@@ -144,11 +144,11 @@ a:hover { color: #036; }*/
    /*display:block;*/
 }
 
-#contact-form .required {
+/*#contact-form .required {
     font-weight:bold;
     color:#F00; 
 }
-
+*/
 #contact-form #submit-button {
     /*width: 100px;
     background-color:#333;
@@ -171,7 +171,7 @@ a:hover { color: #036; }*/
     top:1px;*/
 }
 
-#contact-form #loading {
+/*#contact-form #loading {
     width:32px;
     height:32px;
     background-image:url(../img/loading.gif);
@@ -180,9 +180,9 @@ a:hover { color: #036; }*/
     right:130px;
     bottom:16px;
     display:none;
-}
+}*/
 
-#errors {
+/*#errors {
     border:solid 1px #E58E8E;
     padding:10px;
     margin:25px 0px;
@@ -193,9 +193,9 @@ a:hover { color: #036; }*/
     border-radius:8px;
     background:#FFE6E6 url(../img/cancel_48.png) no-repeat 405px center;
     display:none;
-}
+}*/
 
-#errors li {
+/*#errors li {
     padding:2px;
     list-style:none;    
 }
@@ -210,9 +210,9 @@ a:hover { color: #036; }*/
 
 #errors #info:before {
     content: '';    
-}
+}*/
 
-#success {
+/*#success {
     border:solid 1px #83D186;
     padding:25px 10px;
     margin:25px 0px;
@@ -224,15 +224,15 @@ a:hover { color: #036; }*/
     background:#D3EDD3 url(../img/accepted_48.png) no-repeat 405px center;
     font-weight:bold;
     display:none;
-}
+}*/
 
-#errors.visible, #success.visible {
+/*#errors.visible, #success.visible {
     display:block;  
 }
 
 #req-field-desc {
     font-style:italic;
-}
+}*/
 
 /* Remove box shadow firefox, chrome and opera put around required fields. It looks rubbish. */
 input:required, textarea:required {
