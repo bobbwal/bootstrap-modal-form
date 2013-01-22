@@ -1,4 +1,4 @@
-/* Bootstrap modal form : version 1.0.0 */
+/* Bootstrap modal form : version 1.1.0 */
 
 /* Overwrite modal slide in */
 .modal.fade{
@@ -41,7 +41,7 @@
 #contact-form #loading {
     width:32px;
     height:32px;
-    background-image:url(../../img/loading.gif);
+    background-image:url(../img/loading.gif);
     display:block;
     position:absolute;
     right:130px;
@@ -57,7 +57,7 @@
     -webkit-border-radius:8px;
     -moz-border-radius:8px;
     border-radius:8px;
-    background:#FFE6E6 url(../../img/cancel_48.png) no-repeat right center;
+    background:#FFE6E6 url(../img/cancel_48.png) no-repeat right center;
     display:none;
 }
 
@@ -86,7 +86,7 @@
     -webkit-border-radius:8px;
     -moz-border-radius:8px;
     border-radius:8px;
-    background:#D3EDD3 url(../../img/accepted_48.png) no-repeat right center;
+    background:#D3EDD3 url(../img/accepted_48.png) no-repeat right center;
     font-weight:bold;
     display:none;
 }
@@ -107,7 +107,7 @@
 #loading {
     width:32px;
     height:32px;
-    background-image:url(../../img/loading.gif);
+    background-image:url(../img/loading.gif);
     display:block;
     position:absolute;
     display:none;

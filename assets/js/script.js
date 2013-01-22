@@ -1,4 +1,4 @@
-/* Bootstrap modal form : version 1.0.0  */
+/* Bootstrap modal form : version 1.1.0  */
 $(function(){
 
 	//set global variables and cache DOM elements for reuse later

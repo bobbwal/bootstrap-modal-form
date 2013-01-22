@@ -1,4 +1,4 @@
-<!-- Bootstrap modal form : version 1.0.0 -->
+<!-- Bootstrap modal form : version 1.1.0 -->
 <?php session_start(); ?>
 <!doctype html>
 <!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
@@ -14,13 +14,13 @@
     <meta name="author" content="">
 	
     <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/form-styles.css" rel="stylesheet">
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <script src="js/libs/modernizr-1.7.min.js"></script>
+    <script src="assets/js/libs/modernizr-1.7.min.js"></script>
 </head>
 
 <body>
@@ -103,10 +103,10 @@
     </div><!-- /#container -->
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/libs/jquery-1.9.0.min.js"><\/script>')</script>
+    <script>window.jQuery || document.write('<script src="assets/js/libs/jquery-1.9.0.min.js"><\/script>')</script>
     <script src="assets/js/bootstrap.min.js"></script>
 	<!-- // <script src="js/plugins.js"></script> -->
-	<script src="js/script.js"></script>
+	<script src="assets/js/script.js"></script>
 
 	<!--[if lt IE 7 ]>
 	<script src="js/libs/dd_belatedpng.js"></script>
