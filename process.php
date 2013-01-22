@@ -1,4 +1,6 @@
 <?php
+/* Bootstrap modal form : version 1.0.0 */
+
 if( isset($_POST) ){
 	
 	//form validation vars

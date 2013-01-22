@@ -1,3 +1,4 @@
+<!-- Bootstrap modal form : version 1.0.0 -->
 <?php session_start(); ?>
 <!doctype html>
 <!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
