@@ -1,2 +1,2 @@
-bootstrap-modal-form test3
+/* Bootstrap modal form : version 1.0.0 */
 
